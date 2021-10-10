@@ -39,7 +39,7 @@ public class Task_2 implements Task_2_base {
             return true;
         else return false;
         */
-        if (base == 1)
+        if (base == 1 && num == 1)
             return true;
         while (num % base == 0)
             num/=base;
