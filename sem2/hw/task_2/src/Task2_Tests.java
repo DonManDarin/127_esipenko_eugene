@@ -73,4 +73,12 @@ public class Task2_Tests extends Assert{
         assertArrayEquals(new Integer[]{1}, myArray);
     }
 
+    @Test
+    public void InsertionSort_TryToSortDifferentNumbers(){
+        InsertionSort<Integer> sorter = new InsertionSort<>();
+        Integer[] myArray = {1, 5, 2, 6};
+        sorter.sort(myArray, new Comparator());
+        assertArrayEquals(new Integer[]{1, 2, 5, 6}, myArray);
+    }
+
 }
