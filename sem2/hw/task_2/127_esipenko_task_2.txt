@@ -3,4 +3,6 @@ BubbleSort|5|for(int i = 0; i < data.length - sps; ++i) { -> for(int i = 1; i < 
 BubbleSort|6|if(comparator.compare(data[i - 1], data[i]) < 0) { -> if(comparator.compare(data[i - 1], data[i]) > 0) {|BubbleSort_TryToSortDifferentNumbers
 
 InsertionSort|6|while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) <= 0){ -> while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) > 0){|InsertionSort_TryToCompareTheSameArrays
-InsertionSort|8|++cur; -> --cur;|InsertionSort_TryToCompareTheSameArrays
+InsertionSort|8|++cur; -> --cur;|InsertionSort_TryToCompareTheSameArraysInsertionSort|8|++cur; -> --cur;|InsertionSort_TryToCompareTheSameArrays
+SelectionSort|10|T tmp = data[data.length - sortedSize]; -> T tmp = data[data.length - 1 - sortedSize];|SelectionSort_TryToCompareTheSameArrays
+SelectionSort|11|data[data.length - sortedSize] = data[maxInd]; -> data[data.length - 1 - sortedSize] = data[maxInd];|SelectionSort_TryToCompareTheSameArrays
